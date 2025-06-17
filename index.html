@@ -22,7 +22,6 @@
       user-select: none;
     }
 
-    /* Contenedor central */
     .lobby-container {
       background: rgba(255, 255, 255, 0.1);
       padding: 40px 50px;
@@ -36,7 +35,6 @@
       transform: translateY(20px);
     }
 
-    /* Animación para fade + slide */
     @keyframes fadeSlideIn {
       to {
         opacity: 1;
@@ -44,7 +42,6 @@
       }
     }
 
-    /* Título */
     h1 {
       font-weight: 900;
       font-size: 2.5rem;
@@ -53,7 +50,6 @@
       text-shadow: 0 2px 6px rgba(0,0,0,0.4);
     }
 
-    /* Descripción */
     p {
       font-weight: 500;
       font-size: 1.1rem;
@@ -62,7 +58,6 @@
       text-shadow: 0 1px 3px rgba(0,0,0,0.3);
     }
 
-    /* Formulario */
     form {
       display: flex;
       gap: 15px;
@@ -77,6 +72,7 @@
       border: none;
       outline: none;
       transition: box-shadow 0.3s ease;
+      color: black;
     }
     input[type="text"]:focus {
       box-shadow: 0 0 12px #fff;
@@ -102,7 +98,6 @@
       box-shadow: 0 6px 16px rgba(255,255,255,0.9);
     }
 
-    /* Resultado */
     #resultado-info {
       margin-top: 30px;
       background: rgba(255, 255, 255, 0.15);
@@ -114,6 +109,7 @@
       text-align: left;
       font-size: 1rem;
       line-height: 1.4;
+      color: white;
     }
 
     #resultado-info h2 {
@@ -131,7 +127,10 @@
       margin-bottom: 10px;
     }
 
-    /* Scroll estilo */
+    #resultado-info em {
+      color: #ddd;
+    }
+
     #resultado-info::-webkit-scrollbar {
       width: 6px;
     }
@@ -181,10 +180,13 @@
         return;
       }
 
-      if (modelos[query]) {
-        const modelo = modelos[query];
+      // Busca la primera clave que incluya la consulta
+      const keyEncontrada = Object.keys(modelos).find(key => key.includes(query));
+
+      if (keyEncontrada) {
+        const modelo = modelos[keyEncontrada];
         resultado.innerHTML = `
-          <h2>${query.toUpperCase()}</h2>
+          <h2>${keyEncontrada.toUpperCase()}</h2>
           <p>${modelo.descripcion}</p>
           <ul>
             ${modelo.puntos.map(p => `<li><strong>${p.nombre}:</strong> ${p.funcion} — Voltaje esperado: <em>${p.voltaje_esperado}</em></li>`).join('')}
