@@ -6,18 +6,90 @@
   <title>CheckPhone</title>
   <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Animación de entrada */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* LOBBY */
+    #lobby {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background-color: #000;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    #lobby h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    #btn-entrar {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #1abc9c;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      animation: fadeInUp 1.6s ease forwards;
+    }
+
+    /* Ocultar el contenido principal al inicio */
+    #main-content {
+      display: none;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>iPhone 12 Mini - Diagnóstico</h1>
 
-  <model-viewer 
-    src="https://modelviewer.dev/shared-assets/models/phone.glb" 
-    alt="Modelo 3D de iPhone 12 Mini"
-    auto-rotate 
-    camera-controls 
-    shadow-intensity="1"
-    style="width: 300px; height: 600px;">
-  </model-viewer>
+  <!-- LOBBY -->
+  <div id="lobby">
+    <h1>Bienvenido a CheckPhone</h1>
+    <button id="btn-entrar">Entrar</button>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div id="main-content">
+    <h1>iPhone 12 Mini - Diagnóstico</h1>
+
+    <model-viewer 
+      src="https://modelviewer.dev/shared-assets/models/phone.glb" 
+      alt="Modelo 3D de iPhone 12 Mini"
+      auto-rotate 
+      camera-controls 
+      shadow-intensity="1"
+      style="width: 300px; height: 600px;">
+    </model-viewer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btn-entrar');
+    const lobby = document.getElementById('lobby');
+    const main = document.getElementById('main-content');
+
+    btn.addEventListener('click', () => {
+      lobby.style.display = 'none';
+      main.style.display = 'block';
+    });
+  </script>
 
   <script src="main.js"></script>
 </body>
