@@ -1,0 +1,456 @@
+{
+  "iphone 8": {
+    "descripcion": "Puntos de prueba para iPhone 8.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.8 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla",
+        "ubicacion": "Flex pantalla, pin 3",
+        "voltaje_esperado": "1.8 V",
+        "funcion": "Alimentación pantalla"
+      },
+      {
+        "nombre": "Pin cámara frontal",
+        "ubicacion": "Flex cámara frontal, pin 1",
+        "voltaje_esperado": "2.8 V",
+        "funcion": "Alimentación cámara frontal"
+      }
+    ]
+  },
+  "iphone x": {
+    "descripcion": "Puntos de prueba para iPhone X.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.85 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla OLED",
+        "ubicacion": "Flex pantalla, pin 5",
+        "voltaje_esperado": "2.2 V",
+        "funcion": "Alimentación pantalla OLED"
+      }
+    ]
+  },
+  "iphone 11": {
+    "descripcion": "Puntos de prueba para iPhone 11.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.8 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla",
+        "ubicacion": "Flex pantalla, pin 3",
+        "voltaje_esperado": "1.8 V",
+        "funcion": "Alimentación pantalla"
+      },
+      {
+        "nombre": "Pin cámara frontal",
+        "ubicacion": "Flex cámara frontal, pin 1",
+        "voltaje_esperado": "2.8 V",
+        "funcion": "Alimentación cámara frontal"
+      }
+    ]
+  },
+  "iphone 12": {
+    "descripcion": "Puntos de prueba para iPhone 12.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.85 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla OLED",
+        "ubicacion": "Flex pantalla, pin 4",
+        "voltaje_esperado": "2.0 V",
+        "funcion": "Alimentación pantalla OLED"
+      }
+    ]
+  },
+  "iphone 13": {
+    "descripcion": "Puntos de prueba para iPhone 13.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.9 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla OLED",
+        "ubicacion": "Flex pantalla, pin 4",
+        "voltaje_esperado": "2.1 V",
+        "funcion": "Alimentación pantalla OLED"
+      },
+      {
+        "nombre": "Pin cámara frontal",
+        "ubicacion": "Flex cámara frontal, pin 2",
+        "voltaje_esperado": "3.0 V",
+        "funcion": "Alimentación cámara frontal"
+      }
+    ]
+  },
+  "iphone 14": {
+    "descripcion": "Puntos de prueba para iPhone 14.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "4.0 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla OLED",
+        "ubicacion": "Flex pantalla, pin 4",
+        "voltaje_esperado": "2.2 V",
+        "funcion": "Alimentación pantalla OLED"
+      }
+    ]
+  }
+}
+{
+  "samsung galaxy s8": {
+    "descripcion": "Puntos de prueba para Samsung Galaxy S8.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.85 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla AMOLED",
+        "ubicacion": "Flex pantalla, pin 3",
+        "voltaje_esperado": "1.9 V",
+        "funcion": "Alimentación pantalla AMOLED"
+      }
+    ]
+  },
+  "samsung galaxy s9": {
+    "descripcion": "Puntos de prueba para Samsung Galaxy S9.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.85 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla AMOLED",
+        "ubicacion": "Flex pantalla, pin 3",
+        "voltaje_esperado": "1.95 V",
+        "funcion": "Alimentación pantalla AMOLED"
+      }
+    ]
+  },
+  "samsung galaxy s10": {
+    "descripcion": "Puntos de prueba para Samsung Galaxy S10.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.9 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla AMOLED",
+        "ubicacion": "Flex pantalla, pin 4",
+        "voltaje_esperado": "2.0 V",
+        "funcion": "Alimentación pantalla AMOLED"
+      }
+    ]
+  },
+  "samsung galaxy s20": {
+    "descripcion": "Puntos de prueba para Samsung Galaxy S20.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "4.0 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla AMOLED",
+        "ubicacion": "Flex pantalla, pin 4",
+        "voltaje_esperado": "2.1 V",
+        "funcion": "Alimentación pantalla AMOLED"
+      }
+    ]
+  },
+  "samsung galaxy s21": {
+    "descripcion": "Puntos de prueba para Samsung Galaxy S21.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "4.1 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla AMOLED",
+        "ubicacion": "Flex pantalla, pin 5",
+        "voltaje_esperado": "2.2 V",
+        "funcion": "Alimentación pantalla AMOLED"
+      }
+    ]
+  },
+  "samsung galaxy s22": {
+    "descripcion": "Puntos de prueba para Samsung Galaxy S22.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "4.15 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla AMOLED",
+        "ubicacion": "Flex pantalla, pin 6",
+        "voltaje_esperado": "2.3 V",
+        "funcion": "Alimentación pantalla AMOLED"
+      }
+    ]
+  }
+}
+{
+  "motorola moto g5": {
+    "descripcion": "Puntos de prueba para Motorola Moto G5.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.85 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla",
+        "ubicacion": "Flex pantalla, pin 3",
+        "voltaje_esperado": "1.8 V",
+        "funcion": "Alimentación pantalla LCD"
+      }
+    ]
+  },
+  "motorola moto g6": {
+    "descripcion": "Puntos de prueba para Motorola Moto G6.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.9 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla",
+        "ubicacion": "Flex pantalla, pin 4",
+        "voltaje_esperado": "1.9 V",
+        "funcion": "Alimentación pantalla LCD"
+      }
+    ]
+  },
+  "xiaomi redmi note 7": {
+    "descripcion": "Puntos de prueba para Xiaomi Redmi Note 7.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.85 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla",
+        "ubicacion": "Flex pantalla, pin 3",
+        "voltaje_esperado": "2.0 V",
+        "funcion": "Alimentación pantalla LCD"
+      }
+    ]
+  },
+  "xiaomi redmi note 8": {
+    "descripcion": "Puntos de prueba para Xiaomi Redmi Note 8.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.9 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla",
+        "ubicacion": "Flex pantalla, pin 3",
+        "voltaje_esperado": "2.1 V",
+        "funcion": "Alimentación pantalla LCD"
+      }
+    ]
+  },
+  "huawei p20": {
+    "descripcion": "Puntos de prueba para Huawei P20.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.8 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla",
+        "ubicacion": "Flex pantalla, pin 4",
+        "voltaje_esperado": "1.9 V",
+        "funcion": "Alimentación pantalla LCD"
+      }
+    ]
+  },
+  "huawei p30": {
+    "descripcion": "Puntos de prueba para Huawei P30.",
+    "modelo3d": "https://modelviewer.dev/shared-assets/models/phone.glb",
+    "puntos": [
+      {
+        "nombre": "Pin batería +",
+        "ubicacion": "Conector batería, pin 1",
+        "voltaje_esperado": "3.9 V",
+        "funcion": "Alimentación principal"
+      },
+      {
+        "nombre": "Pin tierra",
+        "ubicacion": "Conector batería, pin 2",
+        "voltaje_esperado": "0 V",
+        "funcion": "Referencia a tierra"
+      },
+      {
+        "nombre": "Pin pantalla",
+        "ubicacion": "Flex pantalla, pin 5",
+        "voltaje_esperado": "2.0 V",
+        "funcion": "Alimentación pantalla LCD"
+      }
+    ]
+  }
+}
