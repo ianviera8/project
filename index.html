@@ -2,95 +2,81 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CheckPhone</title>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <link rel="stylesheet" href="styles.css" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CheckPhone - Buscador de Modelos</title>
   <style>
-    /* Animación de entrada */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f0f0f0;
     }
-
-    /* LOBBY */
-    #lobby {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background-color: #000;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      animation: fadeInUp 1.2s ease forwards;
-    }
-
-    #lobby h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      animation: fadeInUp 1.2s ease forwards;
-    }
-
-    #btn-entrar {
-      padding: 12px 24px;
+    input, button {
+      padding: 8px;
       font-size: 1rem;
-      background-color: #1abc9c;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      animation: fadeInUp 1.6s ease forwards;
+      margin-right: 10px;
     }
-
-    /* Ocultar el contenido principal al inicio */
-    #main-content {
-      display: none;
-      text-align: center;
+    #resultado-info {
+      margin-top: 20px;
+      background: white;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
     }
   </style>
 </head>
 <body>
 
-  <!-- LOBBY -->
-  <div id="lobby">
-    <h1>Bienvenido a CheckPhone</h1>
-    <button id="btn-entrar">Entrar</button>
-  </div>
+  <h1>CheckPhone - Busca tu modelo</h1>
+  <p>Ingresa el modelo del celular para ver puntos de medición y descripción.</p>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <div id="main-content">
-    <h1>iPhone 12 Mini - Diagnóstico</h1>
+  <input type="text" id="buscador" placeholder="Ejemplo: iphone 12" />
+  <button id="buscar-btn">Buscar</button>
 
-    <model-viewer 
-      src="https://modelviewer.dev/shared-assets/models/phone.glb" 
-      alt="Modelo 3D de iPhone 12 Mini"
-      auto-rotate 
-      camera-controls 
-      shadow-intensity="1"
-      style="width: 300px; height: 600px;">
-    </model-viewer>
-  </div>
+  <div id="resultado-info"></div>
 
   <script>
-    const btn = document.getElementById('btn-entrar');
-    const lobby = document.getElementById('lobby');
-    const main = document.getElementById('main-content');
+    let modelos = {};
 
-    btn.addEventListener('click', () => {
-      lobby.style.display = 'none';
-      main.style.display = 'block';
+    fetch('modelos.json')
+      .then(response => response.json())
+      .then(data => {
+        modelos = data;
+        console.log("Modelos cargados:", modelos);
+      })
+      .catch(err => {
+        console.error("Error cargando modelos.json:", err);
+        document.getElementById('resultado-info').textContent = "No se pudo cargar la base de datos de modelos.";
+      });
+
+    function buscarModelo(nombre) {
+      nombre = nombre.toLowerCase().trim();
+      return modelos[nombre] || null;
+    }
+
+    document.getElementById('buscar-btn').addEventListener('click', () => {
+      const input = document.getElementById('buscador').value;
+      const resultado = buscarModelo(input);
+
+      const infoDiv = document.getElementById('resultado-info');
+      if (resultado) {
+        infoDiv.innerHTML = `
+          <h2>${input.toUpperCase()}</h2>
+          <p>${resultado.descripcion}</p>
+          <ul>
+            ${resultado.puntos.map(p => `<li><strong>${p.nombre}:</strong> ${p.funcion} - Voltaje esperado: ${p.voltaje_esperado}</li>`).join('')}
+          </ul>
+        `;
+      } else {
+        infoDiv.textContent = "Modelo no encontrado. Intenta con otro nombre.";
+      }
     });
   </script>
 
-  <script src="main.js"></script>
 </body>
 </html>
