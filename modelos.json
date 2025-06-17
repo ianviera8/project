@@ -1,10 +1,91 @@
-{ "iphone 12 mini": { "descripcion": "Versión compacta de la serie iPhone 12 con chip A14 Bionic.", "puntos": [ { "nombre": "Pin de carga", "funcion": "Entrada de energía principal", "voltaje_esperado": "5V" }, { "nombre": "Conector de batería", "funcion": "Distribución de energía interna", "voltaje_esperado": "3.7V" }, { "nombre": "CPU", "funcion": "Procesamiento de datos", "voltaje_esperado": "1.8V" } ] },
+{
+  "iphone 12 mini": {
+    "descripcion": "Versión compacta de la serie iPhone 12 con chip A14 Bionic.",
+    "puntos": [
+      {
+        "nombre": "Pin de carga",
+        "funcion": "Entrada de energía principal",
+        "voltaje_esperado": "5V"
+      },
+      {
+        "nombre": "Conector de batería",
+        "funcion": "Distribución de energía interna",
+        "voltaje_esperado": "3.7V"
+      },
+      {
+        "nombre": "CPU",
+        "funcion": "Procesamiento de datos",
+        "voltaje_esperado": "1.8V"
+      }
+    ]
+  },
 
-"samsung galaxy s9": { "descripcion": "Modelo Samsung lanzado en 2018 con Snapdragon 845 o Exynos 9810.", "puntos": [ { "nombre": "Conector de carga", "funcion": "Recibe corriente desde el cargador", "voltaje_esperado": "5V" }, { "nombre": "Regulador de voltaje", "funcion": "Distribuye voltajes adecuados a los componentes", "voltaje_esperado": "1.2V - 4.2V" }, { "nombre": "Memoria RAM", "funcion": "Procesamiento de tareas temporales", "voltaje_esperado": "1.1V" } ] },
+  "samsung galaxy s9": {
+    "descripcion": "Modelo Samsung lanzado en 2018 con Snapdragon 845 o Exynos 9810.",
+    "puntos": [
+      {
+        "nombre": "Conector de carga",
+        "funcion": "Recibe corriente desde el cargador",
+        "voltaje_esperado": "5V"
+      },
+      {
+        "nombre": "Regulador de voltaje",
+        "funcion": "Distribuye voltajes adecuados a los componentes",
+        "voltaje_esperado": "1.2V - 4.2V"
+      },
+      {
+        "nombre": "Memoria RAM",
+        "funcion": "Procesamiento de tareas temporales",
+        "voltaje_esperado": "1.1V"
+      }
+    ]
+  },
 
-"motorola moto g7": { "descripcion": "Teléfono de gama media de Motorola con pantalla de 6.2 pulgadas.", "puntos": [ { "nombre": "Puerto USB-C", "funcion": "Carga y transferencia de datos", "voltaje_esperado": "5V" }, { "nombre": "IC de carga", "funcion": "Controla la energía hacia la batería", "voltaje_esperado": "4.4V" } ] },
+  "motorola moto g7": {
+    "descripcion": "Teléfono de gama media de Motorola con pantalla de 6.2 pulgadas.",
+    "puntos": [
+      {
+        "nombre": "Puerto USB-C",
+        "funcion": "Carga y transferencia de datos",
+        "voltaje_esperado": "5V"
+      },
+      {
+        "nombre": "IC de carga",
+        "funcion": "Controla la energía hacia la batería",
+        "voltaje_esperado": "4.4V"
+      }
+    ]
+  },
 
-"xiaomi redmi note 9": { "descripcion": "Smartphone económico lanzado en 2020 con batería de 5020 mAh.", "puntos": [ { "nombre": "Pin positivo de batería", "funcion": "Salida de voltaje de la batería", "voltaje_esperado": "3.85V" }, { "nombre": "Circuito de carga rápida", "funcion": "Manejo de carga tipo QC 3.0", "voltaje_esperado": "9V" } ] },
+  "xiaomi redmi note 9": {
+    "descripcion": "Smartphone económico lanzado en 2020 con batería de 5020 mAh.",
+    "puntos": [
+      {
+        "nombre": "Pin positivo de batería",
+        "funcion": "Salida de voltaje de la batería",
+        "voltaje_esperado": "3.85V"
+      },
+      {
+        "nombre": "Circuito de carga rápida",
+        "funcion": "Manejo de carga tipo QC 3.0",
+        "voltaje_esperado": "9V"
+      }
+    ]
+  },
 
-"huawei p30 lite": { "descripcion": "Versión ligera del Huawei P30 con triple cámara trasera.", "puntos": [ { "nombre": "USB-C", "funcion": "Conector de entrada de energía", "voltaje_esperado": "5V" }, { "nombre": "PMIC", "funcion": "Chip de manejo de energía", "voltaje_esperado": "varía según circuito" } ] } }
-
+  "huawei p30 lite": {
+    "descripcion": "Versión ligera del Huawei P30 con triple cámara trasera.",
+    "puntos": [
+      {
+        "nombre": "USB-C",
+        "funcion": "Conector de entrada de energía",
+        "voltaje_esperado": "5V"
+      },
+      {
+        "nombre": "PMIC",
+        "funcion": "Chip de manejo de energía",
+        "voltaje_esperado": "varía según circuito"
+      }
+    ]
+  }
+}
